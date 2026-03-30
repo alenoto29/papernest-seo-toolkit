@@ -1,0 +1,117 @@
+/* ============================================
+   Papernest CAT — Design System Tokens
+   Source: Figma file 3t2bjqWp5FPMk7IcOknP88
+   Auto-extracted, manually curated names.
+   ============================================ */
+
+:root {
+  /* === Brand Colors === */
+  --cat-primary: #5a52ff;              /* Main purple — buttons, links, accents */
+  --cat-primary-dark: #3e38b2;         /* Hover/active state */
+  --cat-primary-darker: #2d297f;       /* Deep purple */
+  --cat-primary-light: #8a85ff;        /* Light purple hover */
+  --cat-primary-lighter: #6c75f4;      /* Secondary purple — footer, logos */
+  --cat-primary-bg: #f6f5ff;           /* Ultra-light purple background */
+  --cat-primary-bg-subtle: #f7f5ff;    /* Subtle purple bg — containers */
+  --cat-primary-bg-muted: #f1f0ff;     /* Muted purple bg — tables */
+
+  /* === Neutral === */
+  --cat-navy: #212430;                 /* Primary text, headers */
+  --cat-navy-alt: #212431;             /* Footer, cookie banner */
+  --cat-dark: #1b1a1f;                 /* Darkest neutral */
+  --cat-text-secondary: #383c4c;       /* Secondary text */
+  --cat-text-muted: #63697f;           /* Labels, placeholders */
+  --cat-text-subtle: #81859a;          /* Captions */
+  --cat-gray-mid: #79716b;             /* Borders, descriptions */
+  --cat-gray-icon: #707173;            /* Icons */
+  --cat-border-default: #e7e5e4;       /* Card/divider borders */
+  --cat-border-light: #d9d9d9;         /* Light borders */
+  --cat-bg-surface: #fafaf9;           /* Table/card surface */
+  --cat-bg-input: #f5f5f4;             /* Input fields */
+  --cat-bg-page: #f7f7f9;              /* Page/section bg */
+  --cat-white: #ffffff;
+  --cat-black: #000000;
+
+  /* === Accent === */
+  --cat-teal: #02c5ae;                 /* Teal — badges, inputs */
+  --cat-teal-light: #0fc4b2;
+  --cat-teal-dark: #018979;
+  --cat-success: #00bc7d;              /* Success green */
+  --cat-trustpilot: #00b67a;           /* Trustpilot green */
+  --cat-error: #ff2056;                /* Error red */
+  --cat-warning: #fd9a00;              /* Warning orange */
+  --cat-yellow: #ffd230;               /* Stars, ratings */
+  --cat-yellow-dark: #ffb81d;
+  --cat-blue-info: #0c68d3;            /* Info blue */
+  --cat-blue-link: #2563eb;            /* Links */
+  --cat-blue-sky: #20a8df;             /* Brand accent sky blue */
+
+  /* === Semantic Backgrounds === */
+  --cat-bg-success: #ecfdf5;
+  --cat-bg-error: #fff1f2;
+  --cat-bg-warning: #fffbeb;
+  --cat-bg-info: #eeeeff;
+  --cat-bg-highlight: #ffe5af;
+  --cat-purple-banner: #211430;
+
+  /* === Border Radius (practical scale) === */
+  --cat-radius-xs: 2px;
+  --cat-radius-sm: 4px;
+  --cat-radius-md: 6px;
+  --cat-radius-base: 8px;
+  --cat-radius-lg: 12px;
+  --cat-radius-xl: 16px;
+  --cat-radius-2xl: 24px;
+  --cat-radius-3xl: 32px;
+  --cat-radius-full: 9999px;
+
+  /* === Spacing (core scale) === */
+  --cat-space-1: 4px;
+  --cat-space-2: 8px;
+  --cat-space-3: 12px;
+  --cat-space-4: 16px;
+  --cat-space-5: 20px;
+  --cat-space-6: 24px;
+  --cat-space-8: 32px;
+  --cat-space-10: 40px;
+  --cat-space-12: 48px;
+  --cat-space-16: 64px;
+  --cat-space-20: 80px;
+  --cat-space-24: 96px;
+  --cat-space-32: 128px;
+
+  /* === Typography === */
+  --cat-font-heading: 'Avenir', sans-serif;
+  --cat-font-body: 'Avenir', sans-serif;
+  --cat-font-display: 'Exo', sans-serif;
+  --cat-font-decorative: 'Grand Hotel', cursive;
+  --cat-font-system: 'Inter', sans-serif;
+  --cat-font-mono: 'Roboto', monospace;
+
+  /* Font sizes (type scale) */
+  --cat-text-xs: 10px;
+  --cat-text-sm: 12px;
+  --cat-text-base: 14px;
+  --cat-text-md: 16px;
+  --cat-text-lg: 18px;
+  --cat-text-xl: 20px;
+  --cat-text-2xl: 24px;
+  --cat-text-3xl: 30px;
+  --cat-text-4xl: 36px;
+  --cat-text-5xl: 48px;
+  --cat-text-6xl: 60px;
+  --cat-text-7xl: 72px;
+  --cat-text-8xl: 96px;
+  --cat-text-9xl: 128px;
+
+  /* === Shadows === */
+  --cat-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --cat-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --cat-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --cat-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.10), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --cat-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.10), 0 10px 10px rgba(0, 0, 0, 0.04);
+  --cat-shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+  --cat-shadow-primary: 0 2px 8px rgba(90, 82, 255, 0.40);
+  --cat-shadow-teal: 0 2px 4px rgba(24, 215, 210, 0.42);
+  --cat-shadow-card: 0 2px 12px 1px rgba(127, 131, 152, 0.20);
+}
