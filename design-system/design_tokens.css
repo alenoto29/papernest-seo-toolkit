@@ -1,60 +1,160 @@
 /* ============================================
    Papernest CAT — Design System Tokens
    Source: Figma file 3t2bjqWp5FPMk7IcOknP88
-   Auto-extracted, manually curated names.
+   Scala Tailwind CSS (50→950) per famiglia.
    ============================================ */
 
 :root {
-  /* === Brand Colors === */
-  --cat-primary: #5a52ff;              /* Main purple — buttons, links, accents */
-  --cat-primary-dark: #3e38b2;         /* Hover/active state */
-  --cat-primary-darker: #2d297f;       /* Deep purple */
-  --cat-primary-light: #8a85ff;        /* Light purple hover */
-  --cat-primary-lighter: #6c75f4;      /* Secondary purple — footer, logos */
-  --cat-primary-bg: #f6f5ff;           /* Ultra-light purple background */
-  --cat-primary-bg-subtle: #f7f5ff;    /* Subtle purple bg — containers */
-  --cat-primary-bg-muted: #f1f0ff;     /* Muted purple bg — tables */
+  /* ===================================================
+     PRIMARY (Purple) — Tailwind scale
+     =================================================== */
+  --cat-primary-50: #f6f5ff;
+  --cat-primary-100: #f1f0ff;
+  --cat-primary-200: #ceccff;
+  --cat-primary-300: #aca8ff;
+  --cat-primary-400: #8a85ff;
+  --cat-primary-500: #5a52ff;          /* Main — buttons, links, accents */
+  --cat-primary-600: #443ec1;
+  --cat-primary-700: #3e38b2;          /* Hover/active */
+  --cat-primary-800: #2d297f;
+  --cat-primary-900: #1b194d;
+  --cat-primary-950: #110f32;
 
-  /* === Neutral === */
+  /* Aliases (backward compat) */
+  --cat-primary: var(--cat-primary-500);
+  --cat-primary-dark: var(--cat-primary-700);
+  --cat-primary-darker: var(--cat-primary-800);
+  --cat-primary-light: var(--cat-primary-400);
+  --cat-primary-lighter: #6c75f4;      /* Footer, logos (non nella scala) */
+  --cat-primary-bg: var(--cat-primary-50);
+  --cat-primary-bg-subtle: #f7f5ff;
+  --cat-primary-bg-muted: var(--cat-primary-100);
+
+  /* ===================================================
+     SECONDARY (Teal) — Tailwind scale
+     =================================================== */
+  --cat-secondary-50: #f2fcfb;
+  --cat-secondary-100: #e0f8f6;
+  --cat-secondary-200: #b4eee7;
+  --cat-secondary-300: #82e2d7;
+  --cat-secondary-400: #4dd5c5;
+  --cat-secondary-500: #02c5ae;        /* Main — badge, accents */
+  --cat-secondary-600: #029281;
+  --cat-secondary-700: #018979;        /* Hover/active */
+  --cat-secondary-800: #016559;
+  --cat-secondary-900: #003c35;
+
+  /* Aliases */
+  --cat-teal: var(--cat-secondary-500);
+  --cat-teal-light: #0fc4b2;
+  --cat-teal-dark: var(--cat-secondary-700);
+
+  /* ===================================================
+     DESTRUCTIVE (Red) — Tailwind scale
+     =================================================== */
+  --cat-destructive-50: #fff1f2;
+  --cat-destructive-100: #ffccd3;
+  --cat-destructive-200: #ffa1ad;
+  --cat-destructive-300: #ff637e;
+  --cat-destructive-400: #ec003f;
+  --cat-destructive-500: #ff2056;      /* Main — error, destructive */
+  --cat-destructive-600: #c70036;
+  --cat-destructive-700: #a50036;
+  --cat-destructive-800: #8b0836;
+  --cat-destructive-900: #4d0218;
+
+  /* Alias */
+  --cat-error: var(--cat-destructive-500);
+
+  /* ===================================================
+     SUCCESS (Green) — Tailwind scale
+     =================================================== */
+  --cat-success-50: #ecfdf5;
+  --cat-success-100: #d0fae5;
+  --cat-success-200: #a4f4cf;
+  --cat-success-300: #5ee9b5;
+  --cat-success-400: #00d492;
+  --cat-success-500: #00bc7d;          /* Main — validation, confirmation */
+  --cat-success-600: #009966;
+  --cat-success-700: #007a55;
+  --cat-success-800: #006045;
+  --cat-success-900: #004f3b;
+
+  /* Alias */
+  --cat-success: var(--cat-success-500);
+
+  /* ===================================================
+     WARNING (Orange) — Tailwind scale
+     =================================================== */
+  --cat-warning-50: #fffbeb;
+  --cat-warning-100: #fef3c6;
+  --cat-warning-200: #fee685;
+  --cat-warning-300: #ffba00;
+  --cat-warning-400: #e17100;
+  --cat-warning-500: #fd9a00;          /* Main — attention, warning */
+  --cat-warning-600: #bb4d00;
+  --cat-warning-700: #973c00;
+  --cat-warning-800: #7b3306;
+  --cat-warning-900: #461901;
+
+  /* Alias */
+  --cat-warning: var(--cat-warning-500);
+
+  /* ===================================================
+     STONE (Neutral/Gray) — Tailwind scale
+     =================================================== */
+  --cat-stone-50: #fafaf9;
+  --cat-stone-100: #f5f5f4;
+  --cat-stone-200: #e7e5e4;
+  --cat-stone-300: #d6d3d1;
+  --cat-stone-400: #a6a09b;
+  --cat-stone-500: #79716b;
+  --cat-stone-600: #57534d;
+  --cat-stone-700: #44403b;
+  --cat-stone-800: #292524;
+  --cat-stone-900: #1c1917;
+
+  /* ===================================================
+     NEUTRAL — Named colors for text, bg, borders
+     =================================================== */
   --cat-navy: #212430;                 /* Primary text, headers */
   --cat-navy-alt: #212431;             /* Footer, cookie banner */
   --cat-dark: #1b1a1f;                 /* Darkest neutral */
   --cat-text-secondary: #383c4c;       /* Secondary text */
   --cat-text-muted: #63697f;           /* Labels, placeholders */
   --cat-text-subtle: #81859a;          /* Captions */
-  --cat-gray-mid: #79716b;             /* Borders, descriptions */
   --cat-gray-icon: #707173;            /* Icons */
-  --cat-border-default: #e7e5e4;       /* Card/divider borders */
-  --cat-border-light: #d9d9d9;         /* Light borders */
-  --cat-bg-surface: #fafaf9;           /* Table/card surface */
-  --cat-bg-input: #f5f5f4;             /* Input fields */
-  --cat-bg-page: #f7f7f9;              /* Page/section bg */
+  --cat-border-default: var(--cat-stone-200);
+  --cat-border-light: #d9d9d9;
+  --cat-bg-surface: var(--cat-stone-50);
+  --cat-bg-input: var(--cat-stone-100);
+  --cat-bg-page: #f7f7f9;
   --cat-white: #ffffff;
   --cat-black: #000000;
 
-  /* === Accent === */
-  --cat-teal: #02c5ae;                 /* Teal — badges, inputs */
-  --cat-teal-light: #0fc4b2;
-  --cat-teal-dark: #018979;
-  --cat-success: #00bc7d;              /* Success green */
-  --cat-trustpilot: #00b67a;           /* Trustpilot green */
-  --cat-error: #ff2056;                /* Error red */
-  --cat-warning: #fd9a00;              /* Warning orange */
+  /* ===================================================
+     ACCENT & SPECIAL
+     =================================================== */
+  --cat-trustpilot: #00b67a;
   --cat-yellow: #ffd230;               /* Stars, ratings */
   --cat-yellow-dark: #ffb81d;
-  --cat-blue-info: #0c68d3;            /* Info blue */
-  --cat-blue-link: #2563eb;            /* Links */
-  --cat-blue-sky: #20a8df;             /* Brand accent sky blue */
-
-  /* === Semantic Backgrounds === */
-  --cat-bg-success: #ecfdf5;
-  --cat-bg-error: #fff1f2;
-  --cat-bg-warning: #fffbeb;
-  --cat-bg-info: #eeeeff;
-  --cat-bg-highlight: #ffe5af;
+  --cat-blue-info: #0c68d3;
+  --cat-blue-link: #2563eb;
+  --cat-blue-sky: #20a8df;
   --cat-purple-banner: #211430;
 
-  /* === Border Radius (practical scale) === */
+  /* ===================================================
+     SEMANTIC BACKGROUNDS
+     =================================================== */
+  --cat-bg-success: var(--cat-success-50);
+  --cat-bg-error: var(--cat-destructive-50);
+  --cat-bg-warning: var(--cat-warning-50);
+  --cat-bg-info: #eeeeff;
+  --cat-bg-highlight: #ffe5af;
+
+  /* ===================================================
+     BORDER RADIUS
+     =================================================== */
   --cat-radius-xs: 2px;
   --cat-radius-sm: 4px;
   --cat-radius-md: 6px;
@@ -64,8 +164,11 @@
   --cat-radius-2xl: 24px;
   --cat-radius-3xl: 32px;
   --cat-radius-full: 9999px;
+  --cat-radius-ppn: 18px;             /* ppn-shape: TL + BR */
 
-  /* === Spacing (core scale) === */
+  /* ===================================================
+     SPACING (8px grid)
+     =================================================== */
   --cat-space-1: 4px;
   --cat-space-2: 8px;
   --cat-space-3: 12px;
@@ -80,7 +183,9 @@
   --cat-space-24: 96px;
   --cat-space-32: 128px;
 
-  /* === Typography === */
+  /* ===================================================
+     TYPOGRAPHY
+     =================================================== */
   --cat-font-heading: 'Avenir', sans-serif;
   --cat-font-body: 'Avenir', sans-serif;
   --cat-font-display: 'Exo', sans-serif;
@@ -104,7 +209,9 @@
   --cat-text-8xl: 96px;
   --cat-text-9xl: 128px;
 
-  /* === Shadows === */
+  /* ===================================================
+     SHADOWS
+     =================================================== */
   --cat-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
   --cat-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 2px rgba(0, 0, 0, 0.06);
   --cat-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.10), 0 2px 4px rgba(0, 0, 0, 0.06);
@@ -114,4 +221,16 @@
   --cat-shadow-primary: 0 2px 8px rgba(90, 82, 255, 0.40);
   --cat-shadow-teal: 0 2px 4px rgba(24, 215, 210, 0.42);
   --cat-shadow-card: 0 2px 12px 1px rgba(127, 131, 152, 0.20);
+
+  /* Focus rings (input validation) */
+  --cat-ring-primary: 0 0 0 2px rgba(90, 82, 255, 0.25);
+  --cat-ring-warning: 0 0 0 2px rgba(234, 88, 12, 0.25);
+  --cat-ring-error: 0 0 0 2px rgba(220, 38, 38, 0.25);
+
+  /* ===================================================
+     GRADIENTS
+     =================================================== */
+  --cat-gradient-primary: radial-gradient(circle, #8a85ff, #5a52ff, #3e38b2);
+  --cat-gradient-teal: radial-gradient(circle, #4dd5c5, #02c5ae, #018979);
+  --cat-gradient-brand: linear-gradient(135deg, #5a52ff, #918cff);
 }
