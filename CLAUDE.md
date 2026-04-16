@@ -46,6 +46,7 @@ Ogni skill DEVE avere una sezione `## Gotchas` tra Intent e Runtime Rules. Conti
 | off-page-article | `skills/off-page-article/SKILL.md` | Generazione articoli notizia per outreach/link building |
 | prompt-optimizer | `skills/prompt-optimizer/SKILL.md` | Ottimizza prompt ambigui prima di eseguire |
 | wp-page-builder | `skills/wp-page-builder/SKILL.md` | Genera/modifica HTML compatibile WordPress Gutenberg |
+| page-checker | `skills/page-checker/SKILL.md` | Audit pagina migrata: heading spam/AI, fact-check, qualita' italiano (benchmark Paisa') |
 
 ### Routing delle skill
 
@@ -56,6 +57,7 @@ Ogni skill DEVE avere una sezione `## Gotchas` tra Intent e Runtime Rules. Conti
 5. Articolo off-page/outreach -> **off-page-article**
 6. Audit SEO di una pagina -> **seo-page-audit**
 7. Revisione finale prima di pubblicare -> **italian-proofreader**
+8. Controlla pagina migrata / check page -> **page-checker**
 
 ## Design System Papernest CAT
 
